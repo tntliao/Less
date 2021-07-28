@@ -1,0 +1,10 @@
+#wrap {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+#wrap .inner {
+  width: 100px;
+  height: 100】px;
+  background-color: green;
+}

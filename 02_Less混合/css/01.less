@@ -1,0 +1,16 @@
+//混合 语法: .命名{ }
+/* 混合不加 () 会把它一起编译到css，加 () 就不会把它编译到css 这未加() */
+
+.juzhon {
+    width           : 100px;
+    height          : 100px;
+    background-color: green;
+}
+
+.inner {
+    .juzhon;
+}
+
+.inner2 {
+    .juzhon;
+}

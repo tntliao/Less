@@ -1,0 +1,31 @@
+//定义一个同名混合 第一个参数传 @_ 每次调用都会带上  注意：里面参数必须是 @_
+.triangle(@_, @w, @c) {
+    width       : 0;
+    height      : 0;
+    border-style: solid;
+}
+
+//上
+//bottom 是匹配符
+.triangle(bottom, @w: 10px, @c: green) {
+    border-width: @w;
+    border-color: @c transparent transparent transparent;
+}
+
+//右
+.triangle(left, @w: 10px, @c: green) {
+    border-width: @w;
+    border-color: transparent @c transparent transparent;
+}
+
+//下
+.triangle(top, @w: 10px, @c: green) {
+    border-width: @w;
+    border-color: transparent transparent @c transparent;
+}
+
+//左
+.triangle(right, @w: 10px, @c: green) {
+    border-width: @w;
+    border-color: transparent transparent transparent @c;
+}

@@ -1,0 +1,12 @@
+#wrap {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: all 0.5s;
+  /* 在less中要使用 & 符，否者会有空格，功能实现不了 */
+}
+#wrap:hover {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}

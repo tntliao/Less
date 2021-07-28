@@ -1,0 +1,9 @@
+/* . 是混合 @ 是变量 */
+.border(@1, @2, @3) {
+    border: (@arguments);
+}
+
+/* @arguments 直接把实参传到直接当前位置 */
+.inner {
+    .border(10px, solid, red);
+}
